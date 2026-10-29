@@ -79,7 +79,7 @@ export const config = {
   },
 
   share: {
-    title: '[신랑] ♥ [신부] 결혼합니다',
-    text: '[공유 메시지]',
+    title: '저희 결혼합니다',
+    text: '소중한 분들을 저희의 새로운 시작에 초대합니다.',
   },
 }
