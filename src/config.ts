@@ -49,12 +49,8 @@ export const config = {
     { icon: 'local_parking', title: '자가용 & 주차', lines: ['[주차 안내]'] },
   ],
 
-  // 앱이 설치돼 있으면 앱으로, 아니면 각 서비스 웹으로 연결됩니다. 필요하면 공유 링크로 교체하세요.
-  mapLinks: {
-    tmap: `tmap://route?goalname=${encodeURIComponent(venue.name)}&goalx=${venue.lng}&goaly=${venue.lat}`,
-    kakaoNavi: `https://map.kakao.com/link/to/${encodeURIComponent(venue.name)},${venue.lat},${venue.lng}`,
-    naverMap: `https://map.naver.com/p/search/${encodeURIComponent(venue.address)}`,
-  },
+  // 네이버지도 길찾기 링크. 앱이 있으면 앱으로 열린다. 필요하면 네이버지도 공유 링크로 교체하세요.
+  naverMapLink: `https://map.naver.com/p/search/${encodeURIComponent(venue.address)}`,
 
   accounts: {
     groom: [

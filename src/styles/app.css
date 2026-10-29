@@ -874,44 +874,26 @@ ul {
   margin: var(--space-lg) 0 var(--space-sm);
 }
 
-.nav-buttons {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-sm);
-}
-
 .nav-btn {
-  display: grid;
-  justify-items: center;
-  gap: var(--space-sm);
-  padding: 16px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  padding: 14px;
   border-radius: var(--radius-card);
   background: var(--color-surface);
   border: 1px solid var(--color-line);
-  font: var(--text-body-sm);
+  font: var(--text-body-md);
   font-weight: 500;
 }
 
 .nav-mark {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font: 700 18px/1 var(--font-serif);
-}
-
-.nav-mark.tmap {
-  background: #1d2f5c;
-  color: #fff;
-}
-
-.nav-mark.kakao {
-  background: #fee500;
-  color: #191919;
-}
-
-.nav-mark.naver {
+  font: 700 16px/1 var(--font-serif);
   background: #03c75a;
   color: #fff;
 }
@@ -983,6 +965,19 @@ ul {
   background: var(--color-surface-soft);
   display: grid;
   gap: var(--space-sm);
+  animation: slide-down 0.3s var(--ease);
+}
+
+/* display:grid가 hidden 속성을 덮어쓰지 않게 */
+.accordion-panel[hidden] {
+  display: none;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    translate: 0 -8px;
+  }
 }
 
 .account {

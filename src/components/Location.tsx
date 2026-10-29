@@ -3,7 +3,7 @@ import { config } from '../config'
 import { copyWithToast } from '../lib/ui'
 import { Icon, Section } from './common'
 
-const { venue, mapLinks, transport } = config
+const { venue, naverMapLink, transport } = config
 const mapKey = import.meta.env.VITE_NAVER_MAP_KEY
 
 type NaverMaps = {
@@ -30,12 +30,6 @@ function NaverMap({ apiKey }: { apiKey: string }) {
   return <div ref={ref} className="map" role="img" aria-label={`${venue.name} 위치 지도`} />
 }
 
-const navButtons = [
-  { href: mapLinks.tmap, label: '티맵', mark: 'T', cls: 'tmap' },
-  { href: mapLinks.kakaoNavi, label: '카카오내비', mark: 'K', cls: 'kakao' },
-  { href: mapLinks.naverMap, label: '네이버지도', mark: 'N', cls: 'naver' },
-]
-
 export function Location() {
   return (
     <Section id="location" eyebrow="LOCATION" title="오시는 길">
@@ -61,17 +55,13 @@ export function Location() {
 
       {mapKey && <NaverMap apiKey={mapKey} />}
 
-      <p className="tiny muted">내비게이션 바로가기</p>
-      <div className="nav-buttons">
-        {navButtons.map((b) => (
-          <a key={b.label} className="nav-btn" href={b.href} target="_blank" rel="noreferrer">
-            <span className={`nav-mark ${b.cls}`} aria-hidden="true">
-              {b.mark}
-            </span>
-            {b.label}
-          </a>
-        ))}
-      </div>
+      <p className="tiny muted">길찾기</p>
+      <a className="nav-btn" href={naverMapLink} target="_blank" rel="noreferrer">
+        <span className="nav-mark" aria-hidden="true">
+          N
+        </span>
+        네이버지도로 길찾기
+      </a>
 
       <h3 className="sub-title">
         <Icon name="directions_bus" /> 대중교통 및 주차 안내
