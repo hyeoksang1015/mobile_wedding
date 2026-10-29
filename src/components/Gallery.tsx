@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { config } from '../config'
-import { swipeHandlers, useScrollLock } from '../lib/ui'
+import { swipeHandlers, useBackToClose, useScrollLock } from '../lib/ui'
 import { Icon, Section } from './common'
 
 const photos = config.images.gallery
@@ -8,6 +8,7 @@ const photos = config.images.gallery
 function Lightbox({ start, onClose }: { start: number; onClose: () => void }) {
   const [index, setIndex] = useState(start)
   useScrollLock()
+  useBackToClose(onClose)
   const prev = () => setIndex((i) => (i - 1 + photos.length) % photos.length)
   const next = () => setIndex((i) => (i + 1) % photos.length)
 

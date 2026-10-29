@@ -1641,3 +1641,15 @@ textarea:focus {
     transform: none;
   }
 }
+
+/* ── additions: calendar actions, guestbook password row */
+.ghost-btn.block {
+  width: 100%;
+  margin-top: var(--space-sm);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+}

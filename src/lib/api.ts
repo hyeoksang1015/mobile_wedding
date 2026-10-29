@@ -45,6 +45,9 @@ async function rpc<T>(fn: string, args: Record<string, unknown>) {
   return data as T
 }
 
+/** DB의 기기당 쓰기 제한(_rate_limit)에 걸렸는지 */
+export const isRateLimited = (e: unknown) => e instanceof Error && e.message === 'too many requests'
+
 export const publicUrl = (path: string) =>
   db().storage.from(BUCKET).getPublicUrl(path).data.publicUrl
 
@@ -99,12 +102,16 @@ export const listGuestbook = (after?: GuestbookEntry) =>
     p_limit: GUESTBOOK_PAGE,
   })
 
-export const addGuestbook = (nickname: string, body: string) =>
+export const addGuestbook = (nickname: string, body: string, password: string) =>
   rpc<GuestbookEntry>('add_guestbook', {
     p_device_id: getDeviceId(),
     p_nickname: nickname,
     p_body: body,
+    p_password: password,
   })
+
+export const deleteGuestbook = (id: string, password: string) =>
+  rpc<boolean>('delete_guestbook', { p_id: id, p_password: password })
 
 /** XHR로 올려야 업로드 진행률을 받을 수 있다 (supabase-js 업로드는 fetch 기반) */
 export function uploadFile(path: string, blob: Blob, onProgress: (loaded: number) => void) {

@@ -6,13 +6,14 @@ import {
   deleteOwnPhoto,
   listComments,
   publicUrl,
+  isRateLimited,
   report,
   toggleLike,
   type Comment,
   type Photo,
 } from '../lib/api'
 import { getNickname, saveNickname } from '../lib/storage'
-import { swipeHandlers, timeAgo, toast } from '../lib/ui'
+import { swipeHandlers, timeAgo, toast, useBackToClose } from '../lib/ui'
 
 const COMMENT_PAGE = 20
 
@@ -63,8 +64,8 @@ function Comments({ photo, onCount }: { photo: Photo; onCount: (delta: number) =
       setBody('')
       onCount(1)
       toast('축하 댓글이 소중히 기록되었습니다')
-    } catch {
-      toast('댓글 등록에 실패했어요')
+    } catch (err) {
+      toast(isRateLimited(err) ? '댓글은 1분에 10개까지 남길 수 있어요' : '댓글 등록에 실패했어요')
     } finally {
       setBusy(false)
     }
@@ -189,6 +190,7 @@ export function Viewer(props: {
   onNeedMore: () => void
 }) {
   const { photos, index, onIndex, onClose, onNeedMore } = props
+  useBackToClose(onClose)
   const photo = photos[index]
   const liking = useRef(false)
 

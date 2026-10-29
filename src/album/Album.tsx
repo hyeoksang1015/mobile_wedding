@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Icon } from '../components/common'
 import { listPhotos, PAGE_SIZE, publicUrl, supabase, type Photo, type Sort } from '../lib/api'
-import { useScrollLock } from '../lib/ui'
+import { useBackToClose, useScrollLock } from '../lib/ui'
 import { Uploader } from './Uploader'
 import { Viewer } from './Viewer'
 
@@ -49,6 +49,7 @@ function Card({ photo, onOpen }: { photo: Photo; onOpen: () => void }) {
 
 export function Album({ onClose }: { onClose: () => void }) {
   useScrollLock()
+  useBackToClose(onClose)
   const [sort, setSort] = useState<Sort>('recent')
   const [feed, setFeed] = useState<Feed>(EMPTY)
   const [viewing, setViewing] = useState<number | null>(null)

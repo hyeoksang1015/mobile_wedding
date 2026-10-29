@@ -120,6 +120,41 @@ export function useScrollLock(active = true) {
   }, [active])
 }
 
+let openOverlays = 0
+const stateDepth = (state: unknown) => (state as { depth?: number } | null)?.depth ?? 0
+
+/**
+ * 열려 있는 동안 히스토리 항목을 하나 쌓아서, 휴대폰 뒤로가기가 페이지 이탈 대신 오버레이를 닫게 한다.
+ * 겹친 오버레이(사진첩 위 뷰어)는 depth로 구분해 맨 위 것만 닫힌다.
+ */
+export function useBackToClose(onClose: () => void) {
+  const closeRef = useRef(onClose)
+  useEffect(() => {
+    closeRef.current = onClose
+  })
+  useEffect(() => {
+    const depth = ++openOverlays
+    // StrictMode 재마운트처럼 이미 같은 깊이의 항목이 있으면 재사용한다
+    if (stateDepth(history.state) !== depth) history.pushState({ depth }, '')
+    let popped = false
+    const onPop = (e: PopStateEvent) => {
+      if (stateDepth(e.state) >= depth) return
+      popped = true
+      closeRef.current()
+    }
+    window.addEventListener('popstate', onPop)
+    return () => {
+      openOverlays--
+      window.removeEventListener('popstate', onPop)
+      if (popped) return
+      // 버튼으로 닫았으면 쌓아둔 항목을 걷어낸다. 곧바로 다시 마운트된 경우(StrictMode)는 그대로 둔다.
+      setTimeout(() => {
+        if (openOverlays < depth && stateDepth(history.state) === depth) history.back()
+      })
+    }
+  }, [])
+}
+
 const KST = 'Asia/Seoul'
 
 /** 한국 시간 기준 연/월/일/요일/시/분 */

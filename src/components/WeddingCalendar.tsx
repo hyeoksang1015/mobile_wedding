@@ -1,11 +1,13 @@
 import { config } from '../config'
-import { useNow, WEEKDAYS_KO } from '../lib/ui'
+import { copyWithToast, useNow, WEEKDAYS_KO } from '../lib/ui'
 import {
   dDayLabel,
   daysLeft,
+  icsHref,
   wedding,
   weddingAt,
   weddingDateKo,
+  weddingPlace,
   weddingTimeKo,
 } from '../lib/wedding'
 import { Icon, Section } from './common'
@@ -106,6 +108,22 @@ export function WeddingCalendar() {
           {config.venue.name}
         </p>
       </div>
+
+      <a className="primary-btn block" href={icsHref} download="wedding.ics">
+        <Icon name="event_available" /> 캘린더에 일정 등록하기 (3시간 전 알림)
+      </a>
+      <button
+        type="button"
+        className="ghost-btn block"
+        onClick={() =>
+          copyWithToast(
+            `${weddingDateKo} ${weddingTimeKo}\n${weddingPlace}`,
+            '예식 일시와 장소가 복사되었습니다',
+          )
+        }
+      >
+        <Icon name="content_copy" /> 일시 복사하기
+      </button>
     </Section>
   )
 }

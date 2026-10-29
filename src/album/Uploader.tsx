@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type ChangeEvent } from 'react'
 import { Icon } from '../components/common'
-import { registerPhoto, removeFiles, uploadFile } from '../lib/api'
+import { isRateLimited, registerPhoto, removeFiles, uploadFile } from '../lib/api'
 import { IMAGE_EXT, MAX_SOURCE_BYTES, resizeImage } from '../lib/image'
 import { getNickname, saveNickname } from '../lib/storage'
 import { toast } from '../lib/ui'
@@ -74,10 +74,14 @@ export function Uploader(props: { onClose: () => void; onUploaded: () => void })
       await registerPhoto(nickRef.current, path, thumbPath)
       uploadedInBatch.current++
       patch(id, { status: 'done', progress: 1 })
-    } catch {
+    } catch (err) {
       // 보상 처리: 메타데이터가 없는 파일은 지운다
       removeFiles(uploaded).catch(() => {})
-      patch(id, { status: 'error', message: '업로드 실패', retryable: true })
+      patch(id, {
+        status: 'error',
+        message: isRateLimited(err) ? '잠시 후 재시도' : '업로드 실패',
+        retryable: true,
+      })
     }
   }
 
