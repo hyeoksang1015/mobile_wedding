@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;700&amp;family=Noto+Sans+KR:wght@300;400;500;700&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=block" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&amp;family=Noto+Serif:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#fdf9f3;}body{overscroll-behavior:none;font-family:'Noto Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#37312b", "surface-bright": "#fdf9f3", "on-error-container": "#93000a", "on-secondary-fixed": "#201a17", "on-secondary": "#ffffff", "on-error": "#ffffff", "on-secondary-container": "#6b625f", "inverse-surface": "#31302d", "secondary": "#655d59", "surface-container-high": "#ebe8e2", "surface": "#fdf9f3", "on-primary-container": "#51261b", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-variant": "#e6e2dc", "tertiary": "#645d56", "outline-variant": "#d7c2bd", "on-secondary-fixed-variant": "#4d4542", "background": "#fdf9f3", "on-tertiary-fixed": "#201b15", "inverse-primary": "#fab6a5", "primary-container": "#c98b7b", "surface-dim": "#dddad4", "tertiary-container": "#a29991", "surface-container-lowest": "#ffffff", "secondary-fixed": "#ede0db", "primary-fixed-dim": "#fab6a5", "on-surface-variant": "#524440", "tertiary-fixed-dim": "#cfc5bc", "on-surface": "#1c1c18", "primary": "#855143", "inverse-on-surface": "#f4f0ea", "on-primary": "#ffffff", "secondary-container": "#ede0db", "tertiary-fixed": "#ebe1d8", "surface-container-highest": "#e6e2dc", "on-tertiary-fixed-variant": "#4c463f", "surface-container": "#f1ede7", "surface-tint": "#855143", "surface-container-low": "#f7f3ed", "on-primary-fixed-variant": "#693a2d", "secondary-fixed-dim": "#d0c4bf", "on-background": "#1c1c18", "outline": "#84736f", "error": "#ba1a1a", "on-primary-fixed": "#341007", "primary-fixed": "#ffdbd2" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.25rem", "space-sm": "0.5rem", "margin": "1.25rem", "space-md": "0.75rem", "gutter": "1rem", "space-xl": "2rem" }, fontFamily: { "display": ["Noto Serif"], "body-md": ["Noto Sans"], "label-sm": ["Noto Sans"], "body-lg": ["Noto Sans"], "body-sm": ["Noto Sans"], "poetry-lead": ["Noto Serif"], "headline-lg": ["Noto Serif"], "label-md": ["Noto Sans"], "headline-md": ["Noto Serif"] }, fontSize: { "display": ["32px", { "lineHeight": "44px", "letterSpacing": "0.04em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }], "body-lg": ["15px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "poetry-lead": ["16px", { "lineHeight": "30px", "letterSpacing": "0.03em", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "38px", "letterSpacing": "0.02em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-14 px-margin flex items-center justify-between max-w-[430px] mx-auto"><div class="flex items-center gap-space-sm"><img alt="Botanical Crest Monogram" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx6Mwkr6dahk5XG3DqinACcqlsLx4ApidRlXTVi1ErCQGkRFjpBt21e0qJGyVSAkYcUSkAfjKY4mC6JmPpeGUB1Ex6XraVxQIEDJVghm9weEl1alcHjRwfo9GmqodF53v7zB55eWX7mkab8mLtMo55VHP8cU8JcaQ4sfVofI-DdmJnsvcrqRPeWPghj5Vlm4pNK89rqW03ilZfVWe-eUVuBZ_QzAkqAh3O-adr7D0"/><div class="flex flex-col"><span class="font-headline-md text-headline-md font-display text-on-surface tracking-tight">지훈 ♥ 서연</span><span class="font-label-sm text-label-sm text-on-surface-variant">Guest Album</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Menu" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:bg-surface-container transition-colors" onclick="const d = document.getElementById('drawer-menu'); d &amp;&amp; d.classList.toggle('hidden');" type="button"><span class="material-symbols-outlined text-[22px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="fixed inset-0 z-50 bg-on-surface/30 backdrop-blur-sm hidden transition-opacity" id="drawer-menu"><div class="absolute right-0 top-0 h-full w-[280px] bg-surface shadow-2xl flex flex-col pt-safe pb-safe"><div class="h-14 px-margin flex items-center justify-between border-b border-surface-container-high"><span class="font-headline-md text-headline-md font-display text-on-surface">전체 메뉴</span><button aria-label="Close Drawer" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('drawer-menu').classList.add('hidden')" type="button"><span class="material-symbols-outlined text-[22px]">close</span></button></div><nav class="flex-1 overflow-y-auto py-space-md px-margin space-y-1"><a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface hover:bg-surface-container transition-colors font-body-md text-body-md" href="#" onclick="document.getElementById('drawer-menu').classList.add('hidden')"><span class="material-symbols-outlined text-[20px] text-primary">favorite</span><span>예식안내</span></a><a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface hover:bg-surface-container transition-colors font-body-md text-body-md" href="#" onclick="document.getElementById('drawer-menu').classList.add('hidden')"><span class="material-symbols-outlined text-[20px] text-primary">calendar_today</span><span>일정 안내</span></a><a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface hover:bg-surface-container transition-colors font-body-md text-body-md" href="#" onclick="document.getElementById('drawer-menu').classList.add('hidden')"><span class="material-symbols-outlined text-[20px] text-primary">photo_library</span><span>웨딩 갤러리</span></a><a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface hover:bg-surface-container transition-colors font-body-md text-body-md bg-secondary-fixed/50 font-medium text-primary" data-path="guest-album" href="#" onclick="document.getElementById('drawer-menu').classList.add('hidden')"><span class="material-symbols-outlined text-[20px] text-primary">photo_camera</span><span>하객 사진첩</span></a><a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface hover:bg-surface-container transition-colors font-body-md text-body-md" href="#" onclick="document.getElementById('drawer-menu').classList.add('hidden')"><span class="material-symbols-outlined text-[20px] text-primary">pin_drop</span><span>오시는 길</span></a><a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface hover:bg-surface-container transition-colors font-body-md text-body-md" href="#" onclick="document.getElementById('drawer-menu').classList.add('hidden')"><span class="material-symbols-outlined text-[20px] text-primary">redeem</span><span>마음 전하기</span></a><a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface hover:bg-surface-container transition-colors font-body-md text-body-md" href="#" onclick="document.getElementById('drawer-menu').classList.add('hidden')"><span class="material-symbols-outlined text-[20px] text-primary">edit_note</span><span>방명록</span></a></nav><div class="p-margin border-t border-surface-container-high flex flex-col gap-1 text-center"><p class="font-poetry-lead text-label-sm text-on-surface-variant">소중한 순간을 함께해 주셔서 감사합니다</p></div></div></div><main class="flex-1 w-full max-w-[430px] mx-auto bg-surface pt-14 pb-safe flex flex-col relative"><div class="flex flex-col w-full pb-20">
+<!-- Toast Notification Stack (Live Interactive Showcase) -->
+<aside aria-live="polite" class="sticky top-2 z-30 flex flex-col items-center gap-space-sm px-margin pointer-events-none transition-all duration-300">
+<!-- Toast 1: Like Heart Feedback -->
+<div class="pointer-events-auto flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container-lowest/95 shadow-[0_4px_20px_-2px_rgba(59,47,42,0.12)] backdrop-blur-md transform transition-all duration-300 scale-100 opacity-100" id="toast-like">
+<span class="w-6 h-6 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">하객 사진에 따뜻한 응원을 보냈어요</p>
+<button aria-label="닫기" class="text-on-surface-variant hover:text-on-surface ml-1 p-0.5" onclick="document.getElementById('toast-like').style.display='none'">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Toast 2: Comment Feedback (Stacked micro-delight) -->
+<div class="pointer-events-auto flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-on-primary shadow-[0_4px_16px_rgba(133,81,67,0.25)] transform transition-all duration-300" id="toast-comment">
+<span class="w-5 h-5 rounded-full bg-on-primary/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px] text-on-primary">check</span>
+</span>
+<p class="font-label-md text-label-md tracking-normal text-on-primary font-medium">축하 댓글이 소중히 기록되었습니다</p>
+</div>
+</aside>
+<!-- Pull to Refresh Visual Indicator -->
+<section class="flex flex-col items-center justify-center pt-2 pb-4 px-margin">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary animate-spin">progress_activity</span>
+<span class="font-label-sm text-label-sm">새로운 순간들을 불러오는 중...</span>
+</div>
+</section>
+<!-- Sub-Header Skeleton Bar -->
+<section class="px-margin mb-4 flex items-center justify-between">
+<div class="flex flex-col gap-1.5">
+<div class="h-6 w-28 rounded-lg bg-surface-container-highest animate-pulse"></div>
+<div class="h-3 w-40 rounded bg-surface-container-high animate-pulse"></div>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest animate-pulse"></div>
+<div class="h-9 w-24 rounded-lg bg-primary-container/40 animate-pulse"></div>
+</div>
+</section>
+<!-- Interactive Controls Toggle Pill -->
+<section class="px-margin mb-5">
+<div class="flex p-1 rounded-xl bg-surface-container-low">
+<button class="flex-1 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm text-primary font-label-md text-label-md font-medium text-center transition-all" id="btn-state-skeleton" onclick="setViewState('skeleton')">
+        로딩 스켈레톤 상태
+      </button>
+<button class="flex-1 py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md font-medium text-center hover:text-on-surface transition-all" id="btn-state-loaded" onclick="setViewState('loaded')">
+        완료된 사진첩 미리보기
+      </button>
+</div>
+</section>
+<!-- Skeleton Masonry Grid Container -->
+<div class="px-margin grid grid-cols-2 gap-3 transition-opacity duration-300" id="view-skeleton">
+<!-- Skeleton Column Left -->
+<div class="flex flex-col gap-3">
+<!-- Skeleton Card 1 (Tall) -->
+<article class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2.5">
+<div class="w-full h-44 rounded-lg bg-gradient-to-b from-surface-container-highest via-surface-container-high to-surface-container-highest animate-pulse relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-surface-bright/40 to-transparent -translate-x-full animate-[shimmer_2s_infinite]"></div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest animate-pulse shrink-0"></div>
+<div class="flex flex-col gap-1 flex-1">
+<div class="h-3 w-3/4 rounded bg-surface-container-highest animate-pulse"></div>
+<div class="h-2.5 w-1/2 rounded bg-surface-container-high animate-pulse"></div>
+</div>
+</div>
+<div class="flex justify-between items-center pt-1 px-0.5">
+<div class="h-3 w-8 rounded bg-surface-container-high animate-pulse"></div>
+<div class="h-3 w-6 rounded bg-surface-container-high animate-pulse"></div>
+</div>
+</article>
+<!-- Skeleton Card 2 (Medium) -->
+<article class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2.5">
+<div class="w-full h-32 rounded-lg bg-gradient-to-b from-surface-container-highest via-surface-container-high to-surface-container-highest animate-pulse relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-surface-bright/40 to-transparent -translate-x-full animate-[shimmer_2s_infinite]"></div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest animate-pulse shrink-0"></div>
+<div class="flex flex-col gap-1 flex-1">
+<div class="h-3 w-4/5 rounded bg-surface-container-highest animate-pulse"></div>
+<div class="h-2.5 w-2/5 rounded bg-surface-container-high animate-pulse"></div>
+</div>
+</div>
+</article>
+<!-- Skeleton Card 3 (Square) -->
+<article class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2.5">
+<div class="w-full h-36 rounded-lg bg-gradient-to-b from-surface-container-highest via-surface-container-high to-surface-container-highest animate-pulse"></div>
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest animate-pulse shrink-0"></div>
+<div class="h-3 w-2/3 rounded bg-surface-container-highest animate-pulse"></div>
+</div>
+</article>
+</div>
+<!-- Skeleton Column Right -->
+<div class="flex flex-col gap-3">
+<!-- Skeleton Card 4 (Standard) -->
+<article class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2.5">
+<div class="w-full h-36 rounded-lg bg-gradient-to-b from-surface-container-highest via-surface-container-high to-surface-container-highest animate-pulse relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-surface-bright/40 to-transparent -translate-x-full animate-[shimmer_2s_infinite]"></div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest animate-pulse shrink-0"></div>
+<div class="flex flex-col gap-1 flex-1">
+<div class="h-3 w-3/5 rounded bg-surface-container-highest animate-pulse"></div>
+<div class="h-2.5 w-2/3 rounded bg-surface-container-high animate-pulse"></div>
+</div>
+</div>
+<div class="flex justify-between items-center pt-1 px-0.5">
+<div class="h-3 w-10 rounded bg-surface-container-high animate-pulse"></div>
+<div class="h-3 w-5 rounded bg-surface-container-high animate-pulse"></div>
+</div>
+</article>
+<!-- Skeleton Card 5 (Tall) -->
+<article class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2.5">
+<div class="w-full h-48 rounded-lg bg-gradient-to-b from-surface-container-highest via-surface-container-high to-surface-container-highest animate-pulse relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-surface-bright/40 to-transparent -translate-x-full animate-[shimmer_2s_infinite]"></div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest animate-pulse shrink-0"></div>
+<div class="flex flex-col gap-1 flex-1">
+<div class="h-3 w-4/5 rounded bg-surface-container-highest animate-pulse"></div>
+<div class="h-2.5 w-1/3 rounded bg-surface-container-high animate-pulse"></div>
+</div>
+</div>
+</article>
+<!-- Skeleton Card 6 (Compact) -->
+<article class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2.5">
+<div class="w-full h-28 rounded-lg bg-gradient-to-b from-surface-container-highest via-surface-container-high to-surface-container-highest animate-pulse"></div>
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest animate-pulse shrink-0"></div>
+<div class="h-3 w-1/2 rounded bg-surface-container-highest animate-pulse"></div>
+</div>
+</article>
+</div>
+</div>
+<!-- Loaded State (Hidden by default, toggleable for preview) -->
+<div class="px-margin hidden grid-cols-2 gap-3 transition-opacity duration-300" id="view-loaded">
+<div class="flex flex-col gap-3">
+<article class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2.5">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="A warm candid film photo of happy guests laughing together at a sunlit outdoor Korean garden wedding, soft cream and muted blush tones, natural afternoon lighting, editorial stationery aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS-ZAWUaY1OkhfbaHUPGIYTxkm85E82jZ5Ee_hI_9c3Cf5dxUuKVo0i0Rn9j0fUqMSHt9MmGuwcTL7g_JCS5zshU3e51Nz2LBhV-PS9bB7eBvpI-QVMey9Y4bwYClIRYwSYWmSAfoQUJaoyTHBbBinQRYl0JD3Je6rQ3Obx7sZ68OVqpZLQLl9_J_RlD_yEVcEsRwQO5-IJtyQL_SivLCNAh5MeH-h7LDK6HXvnXc"/>
+<span class="absolute bottom-1.5 right-1.5 px-2 py-0.5 rounded-full bg-inverse-surface/60 backdrop-blur-sm text-surface-bright font-label-sm text-label-sm">식전 라운지</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center text-[10px] font-bold">민</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate">민준 &amp; 지아</span>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-sm text-label-sm font-medium">12</span>
+</div>
+</div>
+</article>
+<article class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2.5">
+<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Close up aesthetic shot of wedding welcome table with handmade calligraphy guestbook and delicate ivory garden flowers in soft morning daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy_nVfCllYK5QP2XW17L1pmXqsdpmBjgYSGBWi3NK-VvM8dgtbSQ-sy_bcZVi1hoiIS8-SrB1yhWHWXz15D-LzCauOBXtY7qp7CuGHAxkZ7nIv-9yJDsp9qAysl2o3lEjfiz8cb7X0GNAEH7le0YUbDNWmpZHds9sv1ajHuHPUrD5DHOyJosjqNUHmFFhDYkhPnxU1WbPiMMjdsdxoJvBjSmy26q22M40D4o3QmS0"/>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center text-[10px] font-bold">예</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate">예린</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">favorite_border</span>
+<span class="font-label-sm text-label-sm">5</span>
+</div>
+</div>
+</article>
+</div>
+<div class="flex flex-col gap-3">
+<article class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2.5">
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Delicate photo of flower bouquet in pastel terracotta and blush ribbons held in hands, soft natural lighting on textured linen paper backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs1kIJ1Ho75BFYbnW0RXE0UTa9_rFEVbd8lwS5DZYyCKfUzj00z8kmukeY0NRzQGKm78svfRuszWH4-BwoRuRX6JauMvIFFXfJysNEKMx2VdJHlw-A_wjX7QFW0r83wAtQ3TWfR8MSrw94RYt_zSe1qzGg3LuOCpAMl4F7dDBbaab-72s5ArmGBX_QKvsO3vmt0wuuZvLPgxKbuMkde1aYk-nMqq6whj4bEC2iufQ"/>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center text-[10px] font-bold">현</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate">현우 삼촌</span>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-sm text-label-sm font-medium">8</span>
+</div>
+</div>
+</article>
+<article class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2.5">
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Candid photograph of bride and groom walking down aisle under gentle floral canopy, guests smiling warmly in soft focus background, editorial film grain." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBgpGHx2WcWKXlKcOb01wazFatFzIYev6LDKXwc80nLmvOaW_x7JaWBNZ9kyvr6jUrP-A9j2nLOkXXrzs_Hrr3ol2IPCO-JmxCx1OC6txk1Uo-Rl1MNyxxCFFA2yXSODpmhRTKb3-Cr2ZuMc0XBZqTIBrJ6dzYhttwtueteFcxfkCL8PDlJ5wcV96gvRYKhj1WWrBaABxumdtXlyF5Tndfv_m7Ys4gRq9kig1Ih1s"/>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center text-[10px] font-bold">수</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate">수빈</span>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-sm text-label-sm font-medium">24</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+<!-- Interactive Trigger Lab (Micro-interaction testing) -->
+<section class="mt-8 px-margin">
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">touch_app</span>
+<span class="font-headline-md text-headline-md font-display text-on-surface">토스트 인터랙션 체험</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">데모 컨트롤</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        하객이 사진에 공감하거나 소중한 축하 메시지를 전송했을 때 부드럽게 나타나는 토스트 피드백을 실시간으로 확인해보세요.
+      </p>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="py-2.5 px-3 rounded-lg bg-surface-container-lowest shadow-sm text-on-surface font-body-sm text-body-sm hover:text-primary active:scale-95 transition-all flex items-center justify-center gap-1.5" onclick="triggerToast('like')">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>좋아요 토스트</span>
+</button>
+<button class="py-2.5 px-3 rounded-lg bg-surface-container-lowest shadow-sm text-on-surface font-body-sm text-body-sm hover:text-primary active:scale-95 transition-all flex items-center justify-center gap-1.5" onclick="triggerToast('comment')">
+<span class="material-symbols-outlined text-[16px] text-primary">chat_bubble</span>
+<span>댓글등록 토스트</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Explanation Card & Guidelines -->
+<section class="mt-4 px-margin mb-6">
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-3.5">
+<div class="flex items-start gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary-container/20 text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-md text-headline-md font-display text-on-surface">안내: 스켈레톤 UI &amp; 반응형 알림 가이드</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DESIGN SYSTEM SPECIFICATION</span>
+</div>
+</div>
+<div class="flex flex-col gap-2.5 pt-1">
+<div class="flex items-start gap-2.5 p-2.5 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">animation</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">자연스러운 로딩 시머 (Shimmer Flow)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              고대비의 거친 회색 대신 부드러운 상아빛(#EFE8DF)과 크림색 펄스 그라디언트를 적용하여 종이 질감의 품격을 유지합니다.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-2.5 p-2.5 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">notifications_active</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">시각적 위계의 둥근 플로팅 토스트</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              화면을 가리지 않는 미세 상단 띄움과 모바일 탭 바 상단 마진을 배려하여 축하 활동의 피드백을 전달합니다.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Botanical Emblem Section Footnote -->
+<div class="flex flex-col items-center justify-center gap-1.5 py-4 text-center">
+<div class="w-8 h-[1px] bg-outline-variant/50"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest">JIHUN &amp; SEOYEON WEDDING ALBUM</span>
+</div>
+</div>
+<script>
+  function setViewState(state) {
+    const skeletonEl = document.getElementById('view-skeleton');
+    const loadedEl = document.getElementById('view-loaded');
+    const btnSkeleton = document.getElementById('btn-state-skeleton');
+    const btnLoaded = document.getElementById('btn-state-loaded');
+
+    if (state === 'skeleton') {
+      skeletonEl.classList.remove('hidden');
+      skeletonEl.classList.add('grid');
+      loadedEl.classList.remove('grid');
+      loadedEl.classList.add('hidden');
+
+      btnSkeleton.classList.add('bg-surface-container-lowest', 'shadow-sm', 'text-primary');
+      btnSkeleton.classList.remove('text-on-surface-variant');
+      btnLoaded.classList.remove('bg-surface-container-lowest', 'shadow-sm', 'text-primary');
+      btnLoaded.classList.add('text-on-surface-variant');
+    } else {
+      loadedEl.classList.remove('hidden');
+      loadedEl.classList.add('grid');
+      skeletonEl.classList.remove('grid');
+      skeletonEl.classList.add('hidden');
+
+      btnLoaded.classList.add('bg-surface-container-lowest', 'shadow-sm', 'text-primary');
+      btnLoaded.classList.remove('text-on-surface-variant');
+      btnSkeleton.classList.remove('bg-surface-container-lowest', 'shadow-sm', 'text-primary');
+      btnSkeleton.classList.add('text-on-surface-variant');
+    }
+  }
+
+  function triggerToast(type) {
+    const toastLike = document.getElementById('toast-like');
+    const toastComment = document.getElementById('toast-comment');
+
+    if (type === 'like') {
+      toastLike.style.display = 'flex';
+      toastLike.style.opacity = '0';
+      toastLike.style.transform = 'translateY(-10px) scale(0.95)';
+      setTimeout(() => {
+        toastLike.style.opacity = '1';
+        toastLike.style.transform = 'translateY(0) scale(1)';
+      }, 50);
+    } else {
+      toastComment.style.display = 'flex';
+      toastComment.style.opacity = '0';
+      toastComment.style.transform = 'translateY(-10px) scale(0.95)';
+      setTimeout(() => {
+        toastComment.style.opacity = '1';
+        toastComment.style.transform = 'translateY(0) scale(1)';
+      }, 50);
+    }
+  }
+</script></main><aside class="fixed bottom-24 right-4 z-40 flex flex-col gap-space-sm items-center pointer-events-auto"><button aria-label="Scroll to top" class="w-11 h-11 rounded-full bg-surface-container-lowest/90 text-on-surface-variant backdrop-blur-md shadow-[0_4px_20px_-2px_rgba(59,47,42,0.12)] flex items-center justify-center hover:text-primary active:scale-95 transition-all" onclick="window.scrollTo({top:0,behavior:'smooth'})" type="button"><span class="material-symbols-outlined text-[20px]">arrow_upward</span></button><button aria-label="Share Invitation" class="w-11 h-11 rounded-full bg-primary-container text-on-primary-container backdrop-blur-md shadow-[0_4px_20px_-2px_rgba(59,47,42,0.15)] flex items-center justify-center hover:bg-primary hover:text-on-primary active:scale-95 transition-all" type="button"><span class="material-symbols-outlined text-[20px]">share</span></button></aside><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(59,47,42,0.04)]" data-active-classes="text-primary font-medium"><div class="flex justify-around items-center h-16 px-space-xs max-w-[430px] mx-auto"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="cover" href="#"><span class="material-symbols-outlined text-[20px]">favorite</span><span class="font-label-sm text-label-sm">예식안내</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-space-xs transition-colors text-primary font-medium" data-path="guest-album" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span><span class="font-label-sm text-label-sm">하객사진</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="gallery" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span class="font-label-sm text-label-sm">갤러리</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="location" href="#"><span class="material-symbols-outlined text-[20px]">pin_drop</span><span class="font-label-sm text-label-sm">오시는길</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="gift" href="#"><span class="material-symbols-outlined text-[20px]">redeem</span><span class="font-label-sm text-label-sm">마음전하기</span></a></div></nav></body></html>

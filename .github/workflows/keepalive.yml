@@ -1,0 +1,21 @@
+# Supabase 무료 프로젝트는 7일간 요청이 없으면 일시 정지되므로 주 2회 가벼운 select를 보낸다.
+# 저장소 Settings → Secrets 에 SUPABASE_URL, SUPABASE_ANON_KEY 를 등록할 것.
+name: Supabase keepalive
+
+on:
+  schedule:
+    - cron: '0 3 * * 1,4' # 월·목 03:00 UTC
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Select one row
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: |
+          curl -fsS "$SUPABASE_URL/rest/v1/photos?select=id&limit=1" \
+            -H "apikey: $SUPABASE_ANON_KEY" \
+            -H "Authorization: Bearer $SUPABASE_ANON_KEY"

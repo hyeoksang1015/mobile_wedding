@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;700&amp;family=Noto+Sans+KR:wght@300;400;500;700&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=block" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&amp;family=Noto+Serif:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#fdf9f3;}body{overscroll-behavior:none;font-family:'Noto Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#37312b", "surface-bright": "#fdf9f3", "on-error-container": "#93000a", "on-secondary-fixed": "#201a17", "on-secondary": "#ffffff", "on-error": "#ffffff", "on-secondary-container": "#6b625f", "inverse-surface": "#31302d", "secondary": "#655d59", "surface-container-high": "#ebe8e2", "surface": "#fdf9f3", "on-primary-container": "#51261b", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-variant": "#e6e2dc", "tertiary": "#645d56", "outline-variant": "#d7c2bd", "on-secondary-fixed-variant": "#4d4542", "background": "#fdf9f3", "on-tertiary-fixed": "#201b15", "inverse-primary": "#fab6a5", "primary-container": "#c98b7b", "surface-dim": "#dddad4", "tertiary-container": "#a29991", "surface-container-lowest": "#ffffff", "secondary-fixed": "#ede0db", "primary-fixed-dim": "#fab6a5", "on-surface-variant": "#524440", "tertiary-fixed-dim": "#cfc5bc", "on-surface": "#1c1c18", "primary": "#855143", "inverse-on-surface": "#f4f0ea", "on-primary": "#ffffff", "secondary-container": "#ede0db", "tertiary-fixed": "#ebe1d8", "surface-container-highest": "#e6e2dc", "on-tertiary-fixed-variant": "#4c463f", "surface-container": "#f1ede7", "surface-tint": "#855143", "surface-container-low": "#f7f3ed", "on-primary-fixed-variant": "#693a2d", "secondary-fixed-dim": "#d0c4bf", "on-background": "#1c1c18", "outline": "#84736f", "error": "#ba1a1a", "on-primary-fixed": "#341007", "primary-fixed": "#ffdbd2" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.25rem", "space-sm": "0.5rem", "margin": "1.25rem", "space-md": "0.75rem", "gutter": "1rem", "space-xl": "2rem" }, fontFamily: { "display": ["Noto Serif"], "body-md": ["Noto Sans"], "label-sm": ["Noto Sans"], "body-lg": ["Noto Sans"], "body-sm": ["Noto Sans"], "poetry-lead": ["Noto Serif"], "headline-lg": ["Noto Serif"], "label-md": ["Noto Sans"], "headline-md": ["Noto Serif"] }, fontSize: { "display": ["32px", { "lineHeight": "44px", "letterSpacing": "0.04em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }], "body-lg": ["15px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "poetry-lead": ["16px", { "lineHeight": "30px", "letterSpacing": "0.03em", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "38px", "letterSpacing": "0.02em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-14 px-margin flex items-center justify-between max-w-[430px] mx-auto"><div class="flex items-center gap-space-sm"><img alt="Botanical Crest Monogram" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx6Mwkr6dahk5XG3DqinACcqlsLx4ApidRlXTVi1ErCQGkRFjpBt21e0qJGyVSAkYcUSkAfjKY4mC6JmPpeGUB1Ex6XraVxQIEDJVghm9weEl1alcHjRwfo9GmqodF53v7zB55eWX7mkab8mLtMo55VHP8cU8JcaQ4sfVofI-DdmJnsvcrqRPeWPghj5Vlm4pNK89rqW03ilZfVWe-eUVuBZ_QzAkqAh3O-adr7D0"/><div class="flex flex-col"><span class="font-headline-md text-headline-md font-display text-on-surface tracking-tight">지훈 ♥ 서연</span><span class="font-label-sm text-label-sm text-on-surface-variant">Guest Album</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Menu" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:bg-surface-container transition-colors" onclick="const d = document.getElementById('drawer-menu'); d &amp;&amp; d.classList.toggle('hidden');" type="button"><span class="material-symbols-outlined text-[22px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="fixed inset-0 z-50 bg-on-surface/30 backdrop-blur-sm hidden transition-opacity" id="drawer-menu"><div class="absolute right-0 top-0 h-full w-[280px] bg-surface shadow-2xl flex flex-col pt-safe pb-safe"><div class="h-14 px-margin flex items-center justify-between border-b border-surface-container-high"><span class="font-headline-md text-headline-md font-display text-on-surface">전체 메뉴</span><button aria-label="Close Drawer" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('drawer-menu').classList.add('hidden')" type="button"><span class="material-symbols-outlined text-[22px]">close</span></button></div><nav class="flex-1 overflow-y-auto py-space-md px-margin space-y-1"><a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface hover:bg-surface-container transition-colors font-body-md text-body-md" href="#" onclick="document.getElementById('drawer-menu').classList.add('hidden')"><span class="material-symbols-outlined text-[20px] text-primary">favorite</span><span>예식안내</span></a><a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface hover:bg-surface-container transition-colors font-body-md text-body-md" href="#" onclick="document.getElementById('drawer-menu').classList.add('hidden')"><span class="material-symbols-outlined text-[20px] text-primary">calendar_today</span><span>일정 안내</span></a><a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface hover:bg-surface-container transition-colors font-body-md text-body-md" href="#" onclick="document.getElementById('drawer-menu').classList.add('hidden')"><span class="material-symbols-outlined text-[20px] text-primary">photo_library</span><span>웨딩 갤러리</span></a><a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface hover:bg-surface-container transition-colors font-body-md text-body-md bg-secondary-fixed/50 font-medium text-primary" data-path="guest-album" href="#" onclick="document.getElementById('drawer-menu').classList.add('hidden')"><span class="material-symbols-outlined text-[20px] text-primary">photo_camera</span><span>하객 사진첩</span></a><a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface hover:bg-surface-container transition-colors font-body-md text-body-md" href="#" onclick="document.getElementById('drawer-menu').classList.add('hidden')"><span class="material-symbols-outlined text-[20px] text-primary">pin_drop</span><span>오시는 길</span></a><a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface hover:bg-surface-container transition-colors font-body-md text-body-md" href="#" onclick="document.getElementById('drawer-menu').classList.add('hidden')"><span class="material-symbols-outlined text-[20px] text-primary">redeem</span><span>마음 전하기</span></a><a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface hover:bg-surface-container transition-colors font-body-md text-body-md" href="#" onclick="document.getElementById('drawer-menu').classList.add('hidden')"><span class="material-symbols-outlined text-[20px] text-primary">edit_note</span><span>방명록</span></a></nav><div class="p-margin border-t border-surface-container-high flex flex-col gap-1 text-center"><p class="font-poetry-lead text-label-sm text-on-surface-variant">소중한 순간을 함께해 주셔서 감사합니다</p></div></div></div><main class="flex-1 w-full max-w-[430px] mx-auto bg-surface pt-14 pb-safe flex flex-col relative"><div class="flex flex-col w-full pb-20">
+<div class="px-margin pt-space-lg pb-space-md flex flex-col items-center text-center">
+<div class="flex items-center gap-2 mb-space-xs text-primary-container">
+<svg class="w-5 h-5 opacity-80" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 2C6.5 2 2 6.5 2 12c0 2.4.9 4.6 2.3 6.3L3 21l2.8-1.3C7.4 21.1 9.6 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm1 14.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5v-4c0-.3.2-.5.5-.5s.5.2.5.5v4zm2.5-2c0 .3-.2.5-.5.5s-.5-.2-.5-.5v-2c0-.3.2-.5.5-.5s.5.2.5.5v2zm-5 0c0 .3-.2.5-.5.5s-.5-.2-.5-.5v-2c0-.3.2-.5.5-.5s.5.2.5.5v2zm1.5-6.5c-2.2 0-4-1.8-4-4 0-.3.2-.5.5-.5s.5.2.5.5c0 1.7 1.3 3 3 3s3-1.3 3-3c0-.3.2-.5.5-.5s.5.2.5.5c0 2.2-1.8 4-4 4z" opacity="0.3"></path>
+<path d="M17 12c-2.76 0-5-2.24-5-5 0-.55.45-1 1-1s1 .45 1 1c0 1.65 1.35 3 3 3 .55 0 1 .45 1 1s-.45 1-1 1zm-10 0c-1.65 0-3-1.35-3-3 0-.55.45-1 1-1s1 .45 1 1c0 .55.45 1 1 1s1-.45 1-1c0-1.65-1.35-3-3-3-.55 0-1-.45-1-1s.45-1 1-1c2.76 0 5 2.24 5 5 0 .55-.45 1-1 1z"></path>
+</svg>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Guest Moments</span>
+<svg class="w-5 h-5 opacity-80 rotate-180" fill="currentColor" viewbox="0 0 24 24">
+<path d="M17 12c-2.76 0-5-2.24-5-5 0-.55.45-1 1-1s1 .45 1 1c0 1.65 1.35 3 3 3 .55 0 1 .45 1 1s-.45 1-1 1z"></path>
+</svg>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-display text-on-surface mb-1">하객 사진첩</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">오늘의 소중하고 따뜻한 순간을 함께 나눠주세요</p>
+<div class="flex items-center gap-space-sm">
+<div class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">photo_library</span>
+<span>사진 128장</span>
+</div>
+<button class="px-4 py-2 rounded-xl bg-primary-container text-on-primary font-body-sm text-body-sm flex items-center gap-1.5 shadow-md active:scale-95 transition-transform" id="open-upload-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span class="font-medium">사진 올리기</span>
+</button>
+</div>
+</div>
+<div class="px-margin py-space-sm flex items-center justify-between">
+<div class="flex items-center bg-surface-container rounded-full p-0.5">
+<button class="px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm transition-all" id="sort-latest" type="button">최신순</button>
+<button class="px-3 py-1 rounded-full text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all" id="sort-popular" type="button">인기순</button>
+</div>
+<div class="flex items-center gap-1">
+<button aria-label="그리드 보기" class="w-8 h-8 rounded-full flex items-center justify-center text-primary bg-secondary-container/60" type="button">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+<button aria-label="필터" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<div class="px-margin py-space-xs grid grid-cols-2 gap-space-sm items-start">
+<div class="flex flex-col gap-space-sm">
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col group">
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A warm candid photo taken by a wedding guest showing the bride and groom laughing together outdoors, natural afternoon sunlight, Korean wedding stationery aesthetic, soft muted earth tones, warm film grain." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB93C-nB2J_kVmxZgAYUloOpgOaurfgk6xECWOCxbP6yvBLvGmQUmc4yHCV-PbTNKD4AqGr2r6kaf392K-HMbQ_6svpWAuuG3kv_6LEV8Xzj7HHNdAObg_A3-FmAJleX1zSRF0eoyOqJmnOdObFWOjimL3GI-nETXiPw9BzDz9Js4DMbl_b3F5ZACDLi3c_WXQlMgzyIXV9315HSPSaK6Uf42BMtMZeDWOg0-cToXM"/>
+<span class="absolute top-2 left-2 bg-on-surface/40 backdrop-blur-md text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full">신랑&amp;신부</span>
+</div>
+<div class="p-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">민우 (대학동기)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14:15</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-1 text-primary active:scale-110 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>24</span>
+</button>
+<button class="flex items-center gap-1 hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+<span>5</span>
+</button>
+</div>
+<button aria-label="더보기" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[14px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col group">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A grand Korean wedding hall interior captured from the guest seats, luxurious crystal chandeliers shimmering warm golden light, lush white and peach flower arch at the ceremonial entrance aisle, calm and romantic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxJF0w5xKHvpt0ycsD5GANwN0WjjHumqsnZasrCANRNvpbsyOmtBonvz5Ylbd06_l6h5LgLyDGjjGazN1d4k6xwf9eSpDutKjtm5M4k8hKdku0cPVNhgL8jia1vAsWp3dC3LsNfDgwkROrXdO6Am0Dg042Tl_Gkjd9D6pwvrJk-qBCNykdiYZFrLMUT8fTKSvCI5IhpJj-A0clGo6YvQDscLjdLz4tPFsnOuaqdO0"/>
+<span class="absolute top-2 left-2 bg-on-surface/40 backdrop-blur-md text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full">예식홀</span>
+</div>
+<div class="p-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">현수 선배</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">13:50</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-1 text-primary active:scale-110 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>31</span>
+</button>
+<button class="flex items-center gap-1 hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+<span>8</span>
+</button>
+</div>
+<button aria-label="더보기" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[14px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col group">
+<div class="relative overflow-hidden aspect-square bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Joyful candid shot of the handsome groom greeting friends at the reception desk, genuine bright warm smile, wearing a dark tailored tuxedo with ivory boutonniere, celebratory gentle mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWY81jSmxyjkgbzGj9sFn8HzPSkxlc4adFzcZY9gK0jMaNtyuA2bkA90vPR7cVlpXSS-Y09xHF1e6IML89OnNRh-P2uXg2vddQ3wL6nVALuEQTWuHcU7_SrMqkq_nR9FKc4j3UiYuH16VqtQnuwnbxZRQb1cGqryb9Ilu62_iidnu1-Y1vP-BD4HipdP8iHkFWFJgWS1ugo4SqFk5UGUxmgrvuVQwlJy2TppVYXhA"/>
+<span class="absolute top-2 left-2 bg-on-surface/40 backdrop-blur-md text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full">하객맞이</span>
+</div>
+<div class="p-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">태양</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">13:20</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-1 text-primary active:scale-110 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>45</span>
+</button>
+<button class="flex items-center gap-1 hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+<span>7</span>
+</button>
+</div>
+<button aria-label="더보기" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[14px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col group">
+<div class="relative overflow-hidden aspect-square bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up detail shot of an elegant wedding bouquet resting on an ivory textured linen tablecloth beside bespoke letterpress ceremony name cards, delicate dusty rose ribbons, soft morning bokeh." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPThQF7tWRAsuO9fHMAJ0nNk9tLt_xgBjLOWYwMGOWsy7NVpY6DlfNtP9zix0PtiCEOa_9zzD0f29p3L4fkC9R6M_X1YjwVlAOQTDENJoGN73s6pb151NSbZR_9r1rsu75wvuisrjMhBO2UCwTeita-KW7h4qUtfmeyZg_EbxXA_XIiTRiYfOUP80V-eMnOZo8sPNUvyCwhsTzRl3lzJZ0ed5IgETSwhe6S-oWKcU"/>
+<span class="absolute top-2 left-2 bg-on-surface/40 backdrop-blur-md text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full">웨딩디테일</span>
+</div>
+<div class="p-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">지혜 (사촌동생)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14:02</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-1 hover:text-primary active:scale-110 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite_border</span>
+<span>18</span>
+</button>
+<button class="flex items-center gap-1 hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+<span>3</span>
+</button>
+</div>
+<button aria-label="더보기" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[14px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col group">
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Candid photograph of wedding guests toasting champagne flutes around a warm wooden round dining table, bubbling sparkling wine, festive celebration ambiance, natural smiling background blur." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPwi9bqEHRTRr4TC_hiKDCRtYrgh3k5p90CghrKbo2B7fEoa0oZ77qHK2VbYBNJZr4SsWmIjjUhwfnXdRoeNHpdiakoFynegt7BUA-vy4EgNu_svfAXbaSj75gM61tasOOYfKEwReRKo2ZJxarW2eeHpfYjQ0wJaEfEUgJ-HUipUYsMubTjkx6YHacOhDmd0co49E427KxI6RQvpwu8jZU0-6QGbd8ybVEHGeeipg"/>
+<span class="absolute top-2 left-2 bg-on-surface/40 backdrop-blur-md text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full">피로연</span>
+</div>
+<div class="p-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">수진</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">13:45</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-1 hover:text-primary active:scale-110 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite_border</span>
+<span>12</span>
+</button>
+<button class="flex items-center gap-1 hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+<span>2</span>
+</button>
+</div>
+<button aria-label="더보기" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[14px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col group">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Poetic guest perspective of the wedding ring exchange ceremony, the groom placing a delicate gold band on the bride's hand, sheer bridal veil gently falling, warm emotional lighting, literary elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz-ToKmVKMxoHfh6ldHvDRyJxNaNt5RvI1ZTT0KDZlgXGAeAeKhqpYkDkMmlnb6xXRc726dWsN81Xzb7Urdl40pbzGXqOaDJMAUFsU_u8sD9ueGpYxag3bz0KQ1-TwQX792XE6r057RsiuaZNe5zOUB1FVnWrm0LHA63v5G0YrOCdjtEr05yxbdPqhqDpBE2sxQu1Q-oPUzEK2uF1xUQApVI06exLJ_D017hu4KIM"/>
+<span class="absolute top-2 left-2 bg-on-surface/40 backdrop-blur-md text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full">예식순서</span>
+</div>
+<div class="p-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">은서</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">13:10</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-1 hover:text-primary active:scale-110 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite_border</span>
+<span>9</span>
+</button>
+<button class="flex items-center gap-1 hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+<span>1</span>
+</button>
+</div>
+<button aria-label="더보기" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[14px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="px-margin my-space-lg">
+<div class="w-full rounded-2xl bg-surface-container-low p-space-lg flex flex-col items-center text-center shadow-sm relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-28 h-28 rounded-full bg-secondary-container/40 pointer-events-none"></div>
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shadow-sm mb-space-sm">
+<span class="material-symbols-outlined text-[28px]">add_a_photo</span>
+</div>
+<span class="font-headline-md text-headline-md font-display text-on-surface mb-1">우리만의 추억을 기록해요</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[280px] mb-space-md">
+        신랑 &amp; 신부에게 전달하고 싶은 미공개 사진이나 현장의 순간을 간편하게 업로드해주세요.
+      </p>
+<div class="w-full flex items-center justify-center gap-space-sm">
+<button class="px-5 py-2.5 rounded-xl bg-primary text-on-primary font-body-sm text-body-sm shadow active:scale-95 transition-transform flex items-center gap-1.5" id="guide-upload-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">cloud_upload</span>
+<span>지금 바로 등록하기</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-margin mb-space-xl">
+<details class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<summary class="flex items-center justify-between cursor-pointer list-none text-on-surface font-body-sm text-body-sm font-medium">
+<span class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary">visibility</span>
+<span>사진이 없을 때 화면 미리보기</span>
+</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-space-md pt-space-md flex flex-col items-center text-center p-space-lg rounded-xl bg-surface-container">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center text-tertiary shadow-sm mb-3">
+<span class="material-symbols-outlined text-[32px] text-tertiary">sentiment_satisfied</span>
+</div>
+<p class="font-headline-md text-headline-md font-display text-on-surface mb-1">아직 등록된 사진이 없어요</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">두 사람의 첫 순간을 기록하는 첫 번째 주인공이 되어주세요!</p>
+<button class="px-4 py-2 rounded-xl bg-primary-container text-on-primary font-body-sm text-body-sm flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+<span>첫 번째 사진 올리기</span>
+</button>
+</div>
+</details>
+</div>
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-end justify-center" id="upload-dialog">
+<div class="w-full max-w-[430px] bg-surface rounded-t-2xl p-margin shadow-2xl flex flex-col gap-space-md pb-safe">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">photo_camera</span>
+<h3 class="font-headline-md text-headline-md font-display text-on-surface">사진 등록하기</h3>
+</div>
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="close-upload-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant">작성자 이름 / 관계</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-primary shadow-sm" placeholder="예: 수현 (신부 친구)" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant">남기고 싶은 축하 한마디</label>
+<textarea class="w-full px-3 py-2 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-primary shadow-sm resize-none" placeholder="예쁘게 잘 살아! 오늘 너무 멋졌어 :)" rows="2"></textarea>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary text-[32px] mb-1">add_photo_alternate</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">사진 파일 선택하기</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">JPG, PNG 최대 20MB</span>
+</div>
+</div>
+<div class="flex gap-2 mt-space-xs">
+<button class="flex-1 py-3 rounded-xl bg-surface-container-high text-on-surface font-body-sm text-body-sm" id="cancel-upload-btn" type="button">
+          취소
+        </button>
+<button class="flex-1 py-3 rounded-xl bg-primary text-on-primary font-body-sm text-body-sm font-medium shadow" id="confirm-upload-btn" type="button">
+          올리기
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const dialog = document.getElementById('upload-dialog');
+    const openBtn = document.getElementById('open-upload-btn');
+    const guideBtn = document.getElementById('guide-upload-btn');
+    const closeBtn = document.getElementById('close-upload-btn');
+    const cancelBtn = document.getElementById('cancel-upload-btn');
+    const confirmBtn = document.getElementById('confirm-upload-btn');
+
+    function showDialog() {
+      if (dialog) dialog.classList.remove('hidden');
+    }
+    function hideDialog() {
+      if (dialog) dialog.classList.add('hidden');
+    }
+
+    if (openBtn) openBtn.addEventListener('click', showDialog);
+    if (guideBtn) guideBtn.addEventListener('click', showDialog);
+    if (closeBtn) closeBtn.addEventListener('click', hideDialog);
+    if (cancelBtn) cancelBtn.addEventListener('click', hideDialog);
+    if (confirmBtn) {
+      confirmBtn.addEventListener('click', () => {
+        hideDialog();
+      });
+    }
+
+    const sortLatest = document.getElementById('sort-latest');
+    const sortPopular = document.getElementById('sort-popular');
+    if (sortLatest && sortPopular) {
+      sortLatest.addEventListener('click', () => {
+        sortLatest.className = 'px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm transition-all';
+        sortPopular.className = 'px-3 py-1 rounded-full text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all';
+      });
+      sortPopular.addEventListener('click', () => {
+        sortPopular.className = 'px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm transition-all';
+        sortLatest.className = 'px-3 py-1 rounded-full text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all';
+      });
+    }
+  })();
+</script></main><aside class="fixed bottom-24 right-4 z-40 flex flex-col gap-space-sm items-center pointer-events-auto"><button aria-label="Scroll to top" class="w-11 h-11 rounded-full bg-surface-container-lowest/90 text-on-surface-variant backdrop-blur-md shadow-[0_4px_20px_-2px_rgba(59,47,42,0.12)] flex items-center justify-center hover:text-primary active:scale-95 transition-all" onclick="window.scrollTo({top:0,behavior:'smooth'})" type="button"><span class="material-symbols-outlined text-[20px]">arrow_upward</span></button><button aria-label="Share Invitation" class="w-11 h-11 rounded-full bg-primary-container text-on-primary-container backdrop-blur-md shadow-[0_4px_20px_-2px_rgba(59,47,42,0.15)] flex items-center justify-center hover:bg-primary hover:text-on-primary active:scale-95 transition-all" type="button"><span class="material-symbols-outlined text-[20px]">share</span></button></aside><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(59,47,42,0.04)]" data-active-classes="text-primary font-medium"><div class="flex justify-around items-center h-16 px-space-xs max-w-[430px] mx-auto"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="cover" href="#"><span class="material-symbols-outlined text-[20px]">favorite</span><span class="font-label-sm text-label-sm">예식안내</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-space-xs transition-colors text-primary font-medium" data-path="guest-album" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span><span class="font-label-sm text-label-sm">하객사진</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="gallery" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span class="font-label-sm text-label-sm">갤러리</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="location" href="#"><span class="material-symbols-outlined text-[20px]">pin_drop</span><span class="font-label-sm text-label-sm">오시는길</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="gift" href="#"><span class="material-symbols-outlined text-[20px]">redeem</span><span class="font-label-sm text-label-sm">마음전하기</span></a></div></nav></body></html>

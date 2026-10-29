@@ -1,0 +1,50 @@
+/* 디자인 토큰 (design/DESIGN.md "Yeon"). 디자인 수정은 이 파일의 값만 바꾸면 된다. */
+:root {
+  --color-bg: #fdf9f3;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f7f3ed;
+  --color-surface-muted: #f1ede7;
+  --color-line: #efe7dc;
+  --color-ink: #3b2f2a;
+  --color-ink-2: #7a6e67;
+  --color-ink-3: #a89f97;
+  --color-primary: #c98b7b;
+  --color-primary-hover: #b6796a;
+  --color-primary-strong: #855143;
+  --color-blush: #f4e7e2;
+  --color-sunday: #c2554b;
+  --color-dark: #2f2a27;
+  --color-error: #ba1a1a;
+
+  --font-serif: 'Noto Serif KR', 'Noto Serif', serif;
+  --font-sans: 'Noto Sans KR', 'Noto Sans', system-ui, sans-serif;
+
+  --text-display: 400 32px/44px var(--font-serif);
+  --text-headline-lg: 400 26px/38px var(--font-serif);
+  --text-headline-md: 500 20px/30px var(--font-serif);
+  --text-poetry: 400 16px/30px var(--font-serif);
+  --text-body-lg: 400 15px/24px var(--font-sans);
+  --text-body-md: 400 14px/22px var(--font-sans);
+  --text-body-sm: 400 13px/20px var(--font-sans);
+  --text-label-md: 500 12px/16px var(--font-sans);
+  --text-label-sm: 500 11px/14px var(--font-sans);
+
+  --radius-ctl: 8px;
+  --radius-card: 12px;
+  --radius-sheet: 24px;
+  --radius-pill: 9999px;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 20px;
+  --space-xl: 32px;
+  --space-section: 64px;
+  --margin: 20px;
+
+  --shadow-whisper: 0 4px 20px -2px rgba(59, 47, 42, 0.05);
+  --max-width: 430px;
+  --nav-height: 64px;
+  --bar-height: 56px;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}

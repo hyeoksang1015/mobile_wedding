@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&family=Noto+Serif:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#fdf9f3;}body{overscroll-behavior:none;font-family:'Noto Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#37312b", "surface-bright": "#fdf9f3", "on-error-container": "#93000a", "on-secondary-fixed": "#201a17", "on-secondary": "#ffffff", "on-error": "#ffffff", "on-secondary-container": "#6b625f", "inverse-surface": "#31302d", "secondary": "#655d59", "surface-container-high": "#ebe8e2", "surface": "#fdf9f3", "on-primary-container": "#51261b", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-variant": "#e6e2dc", "tertiary": "#645d56", "outline-variant": "#d7c2bd", "on-secondary-fixed-variant": "#4d4542", "background": "#fdf9f3", "on-tertiary-fixed": "#201b15", "inverse-primary": "#fab6a5", "primary-container": "#c98b7b", "surface-dim": "#dddad4", "tertiary-container": "#a29991", "surface-container-lowest": "#ffffff", "secondary-fixed": "#ede0db", "primary-fixed-dim": "#fab6a5", "on-surface-variant": "#524440", "tertiary-fixed-dim": "#cfc5bc", "on-surface": "#1c1c18", "primary": "#855143", "inverse-on-surface": "#f4f0ea", "on-primary": "#ffffff", "secondary-container": "#ede0db", "tertiary-fixed": "#ebe1d8", "surface-container-highest": "#e6e2dc", "on-tertiary-fixed-variant": "#4c463f", "surface-container": "#f1ede7", "surface-tint": "#855143", "surface-container-low": "#f7f3ed", "on-primary-fixed-variant": "#693a2d", "secondary-fixed-dim": "#d0c4bf", "on-background": "#1c1c18", "outline": "#84736f", "error": "#ba1a1a", "on-primary-fixed": "#341007", "primary-fixed": "#ffdbd2" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.25rem", "space-sm": "0.5rem", "margin": "1.25rem", "space-md": "0.75rem", "gutter": "1rem", "space-xl": "2rem" }, fontFamily: { "display": ["Noto Serif"], "body-md": ["Noto Sans"], "label-sm": ["Noto Sans"], "body-lg": ["Noto Sans"], "body-sm": ["Noto Sans"], "poetry-lead": ["Noto Serif"], "headline-lg": ["Noto Serif"], "label-md": ["Noto Sans"], "headline-md": ["Noto Serif"] }, fontSize: { "display": ["32px", { "lineHeight": "44px", "letterSpacing": "0.04em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }], "body-lg": ["15px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "poetry-lead": ["16px", { "lineHeight": "30px", "letterSpacing": "0.03em", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "38px", "letterSpacing": "0.02em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-14 px-margin flex items-center justify-between max-w-[430px] mx-auto"><div class="flex items-center gap-space-xs"><button aria-label="Back" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary active:bg-surface-container rounded-full transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span></button><img alt="Botanical Crest Monogram" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiXUHUZm-VM4oM6g619QKrgjcVDW1FZlIAMRWn9OkI2FtZxTO4ss3F3jEyfQGMRgqJqjOZyEuNbGGUnxmAGxxpowItstHh7ZNO23aVssu2G_ijgBvxpDIpmKs96TFHVcfE-VysLEhzWN3ETH9jpZYApMIjw6xRQAR0RxN1FlJ4hufZnub-Tlfe1kc8LliidwoJtjWMPn12soth1mJwrWSHHhwzl9gVVwEXYZb7wPQ"/><h1 class="font-headline-md text-headline-md font-display text-on-surface truncate">Greeting</h1></div><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full max-w-[430px] mx-auto bg-surface pt-14 pb-safe flex flex-col relative"><div class="flex flex-col w-full px-margin pb-10">
+<!-- Subtle Ornamental Crest & Date Indicator -->
+<div class="flex flex-col items-center justify-center pt-8 pb-4 text-center">
+<div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-secondary-container/50 mb-3 text-primary">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase mb-1">Wedding Invitation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light">2025년 5월 24일 토요일 낮 12시 30분</span>
+</div>
+<!-- Editorial Couple Portrait Card -->
+<div class="relative w-full rounded-xl overflow-hidden shadow-sm bg-surface-container-low mb-10">
+<div class="w-full aspect-[4/3] relative">
+<img class="w-full h-full object-cover" data-alt="Intimate film-style Korean wedding portrait of an elegant couple in soft daylight. The bride wears a delicate silk ivory gown holding a modest wildflower bouquet, and the groom is in a warm charcoal linen tailored suit. Gentle golden afternoon sunlight casts soft shadows against a warm creamy plaster wall background with subtle botanical olive branches." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCeN9ZOE_AjdK3VRX6LSaXbzAtB8Twr7Eife51GuPxq1m3O7_veHzCnEz7Qi6wXmcGVTVQj-konovLa9CzeKkEkiqLrELXy8vwPSBq40kL_hI7GsKBGM7TUvpVo45-emaMQwAYEKqVMb6tsSwBQ_SV6rJP3PYJwGfi5-FsAVDS1Sse_p13_hkt_ZqVz54xWEmZ_S5BL07b6XJwZu10mlNq_aeQmPQ2wlzQZfZquVk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low/70 via-transparent to-transparent"></div>
+</div>
+<div class="p-4 flex items-center justify-between text-on-surface-variant">
+<span class="font-poetry-lead text-poetry-lead font-display text-on-surface">김지훈 · 박서연</span>
+<span class="font-label-md text-label-md text-primary tracking-wide">아펠가모 공덕 마리에홀</span>
+</div>
+</div>
+<!-- Poetic Invitation Header -->
+<div class="text-center mb-8">
+<span class="font-label-sm text-label-sm text-primary tracking-[0.2em] uppercase block mb-2">Greeting</span>
+<h2 class="font-headline-lg text-headline-lg font-display text-on-surface tracking-normal leading-relaxed">
+      소중한 분들을 초대합니다
+    </h2>
+</div>
+<!-- Lyrical Poetic Invitation Body -->
+<div class="relative flex flex-col items-center justify-center text-center px-4 py-4 mb-6">
+<p class="font-poetry-lead text-poetry-lead font-display text-on-surface leading-[2.2] tracking-wider whitespace-pre-line">서로 마주 보며 키워온 사랑을
+이제 함께 한곳을 바라보며
+평생의 반려자가 되려 합니다.
+
+저희 두 사람의 새로운 출발에
+귀한 걸음으로 축복해 주시면
+더없는 기쁨으로 간직하겠습니다.</p>
+</div>
+<!-- Botanical Leaf Divider -->
+<div aria-hidden="true" class="flex items-center justify-center gap-3 my-8 opacity-80">
+<div class="h-[1px] w-12 bg-secondary-container"></div>
+<div class="flex items-center gap-1 text-primary-container">
+<span class="material-symbols-outlined text-[16px] -rotate-45">eco</span>
+<span class="inline-block w-1 h-1 rounded-full bg-primary-container"></span>
+<span class="material-symbols-outlined text-[16px] rotate-45 scale-x-[-1]">eco</span>
+</div>
+<div class="h-[1px] w-12 bg-secondary-container"></div>
+</div>
+<!-- Family Kinship Summary Section -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm mb-6 flex flex-col items-center text-center">
+<div class="flex items-center justify-center gap-2 font-body-md text-body-md text-on-surface leading-relaxed">
+<span class="text-on-surface-variant">김태환 · 이정숙</span>
+<span class="font-label-sm text-label-sm text-secondary">의 장남</span>
+<strong class="font-display font-medium text-on-surface">지훈</strong>
+</div>
+<div class="w-8 h-[1px] bg-surface-variant my-2.5"></div>
+<div class="flex items-center justify-center gap-2 font-body-md text-body-md text-on-surface leading-relaxed">
+<span class="text-on-surface-variant">박영수 · 정은경</span>
+<span class="font-label-sm text-label-sm text-secondary">의 장녀</span>
+<strong class="font-display font-medium text-on-surface">서연</strong>
+</div>
+</div>
+<!-- Parents & Direct Contact Directory Title -->
+<div class="flex items-center justify-between mt-4 mb-3 px-1">
+<h3 class="font-headline-md text-headline-md font-display text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">contact_phone</span>
+      혼주에게 연락하기
+    </h3>
+<span class="font-label-sm text-label-sm text-secondary">마음 전하실 곳</span>
+</div>
+<!-- Parents Contact Card List -->
+<div class="flex flex-col gap-3">
+<!-- Groom Side Card -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm">
+<div class="flex items-center justify-between pb-3 mb-3 bg-surface-container-low/50 -mx-5 -mt-5 px-5 pt-4 rounded-t-xl">
+<span class="font-label-sm text-label-sm font-semibold tracking-wider text-primary uppercase flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+          신랑측 혼주
+        </span>
+<span class="font-label-sm text-label-sm text-secondary">Groom's Family</span>
+</div>
+<!-- Father Contact -->
+<div class="flex items-center justify-between py-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">아버지</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">김태환</span>
+</div>
+<div class="flex items-center gap-2">
+<a aria-label="신랑 아버지 김태환 전화걸기" class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform shadow-sm" href="tel:01012345678">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<a aria-label="신랑 아버지 김태환 문자보내기" class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform" href="sms:01012345678">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+</div>
+<div class="h-[1px] w-full bg-surface-container-high my-2"></div>
+<!-- Mother Contact -->
+<div class="flex items-center justify-between py-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">어머니</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">이정숙</span>
+</div>
+<div class="flex items-center gap-2">
+<a aria-label="신랑 어머니 이정숙 전화걸기" class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform shadow-sm" href="tel:01023456789">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<a aria-label="신랑 어머니 이정숙 문자보내기" class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform" href="sms:01023456789">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+</div>
+<div class="h-[1px] w-full bg-surface-container-high my-2"></div>
+<!-- Groom Direct Contact -->
+<div class="flex items-center justify-between py-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary">신랑</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">김지훈</span>
+</div>
+<div class="flex items-center gap-2">
+<a aria-label="신랑 김지훈 전화걸기" class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform shadow-sm" href="tel:01034567890">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<a aria-label="신랑 김지훈 문자보내기" class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform" href="sms:01034567890">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Bride Side Card -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm">
+<div class="flex items-center justify-between pb-3 mb-3 bg-surface-container-low/50 -mx-5 -mt-5 px-5 pt-4 rounded-t-xl">
+<span class="font-label-sm text-label-sm font-semibold tracking-wider text-primary uppercase flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+          신부측 혼주
+        </span>
+<span class="font-label-sm text-label-sm text-secondary">Bride's Family</span>
+</div>
+<!-- Father Contact -->
+<div class="flex items-center justify-between py-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">아버지</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">박영수</span>
+</div>
+<div class="flex items-center gap-2">
+<a aria-label="신부 아버지 박영수 전화걸기" class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform shadow-sm" href="tel:01045678901">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<a aria-label="신부 아버지 박영수 문자보내기" class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform" href="sms:01045678901">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+</div>
+<div class="h-[1px] w-full bg-surface-container-high my-2"></div>
+<!-- Mother Contact -->
+<div class="flex items-center justify-between py-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">어머니</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">정은경</span>
+</div>
+<div class="flex items-center gap-2">
+<a aria-label="신부 어머니 정은경 전화걸기" class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform shadow-sm" href="tel:01056789012">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<a aria-label="신부 어머니 정은경 문자보내기" class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform" href="sms:01056789012">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+</div>
+<div class="h-[1px] w-full bg-surface-container-high my-2"></div>
+<!-- Bride Direct Contact -->
+<div class="flex items-center justify-between py-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary">신부</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">박서연</span>
+</div>
+<div class="flex items-center gap-2">
+<a aria-label="신부 박서연 전화걸기" class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform shadow-sm" href="tel:01067890123">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<a aria-label="신부 박서연 문자보내기" class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform" href="sms:01067890123">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Warm Closing Note -->
+<div class="mt-8 text-center p-4 rounded-xl bg-surface-container-low text-secondary flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">mark_chat_read</span>
+<span class="font-body-sm text-body-sm">축하의 마음을 전해주신 모든 분들께 감사드립니다.</span>
+</div>
+</div></main></body></html>
